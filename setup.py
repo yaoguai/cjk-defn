@@ -12,7 +12,7 @@ setup(
     # Basic information
     #
     name='cjk-defn',
-    version='0.9.9',
+    version='1.0.0',
     author='yaoguai',
     author_email='lapislazulitexts@gmail.com',
     url='https://github.com/yaoguai/cjk-defn',
@@ -20,11 +20,11 @@ setup(
     #
     # Descriptions & classifiers
     #
-    description='Command-line CJK dictionary program.',
+    description='Console CJK dictionary program.',
     long_description=LONG_DESCRIPTION,
     keywords='chinese japanese korean cjk asia language dictionary',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
@@ -45,6 +45,8 @@ setup(
         ('share/doc/cjk-defn', [
             'LICENSE.rst',
             'README.rst']),
+        ('share/man/man1', [
+            'cjk-defn.1']),
         ('var/lib/cjk-defn', [
             'var/lib/cjk-defn/dump-database',
             'var/lib/cjk-defn/make-database',

@@ -5,8 +5,10 @@ https://github.com/yaoguai/cjk-defn
 
 cjk-defn is a command-line dictionary program for looking up definitions of
 terms and phrases from the CJK languages (Chinese, Japanese, and Korean).
-Unlike most other dictionaries, cjk-defn allows you to analyze entire lines of
+Unlike most other dictionaries, cjk-defn allows you to input entire lines of
 text, and shows relevant definitions for all terms and phrases found.
+
+cjk-defn is implemented in Python 3 and released under the MIT License.
 
 Features include:
 
@@ -18,11 +20,9 @@ Features include:
 - stdin-stdout I/O for flexibility
 - Cross-platform console application
 - Dictionary module can be imported
-- Implemented in Python 3
-- Released under the MIT License
 
-History / Why???
-----------------
+History / Why?
+--------------
 
 Around 2008-2009, I wanted a program like this, but none existed at that time.
 All tools with similar functionality were Web-based, or proprietary, or were
@@ -38,13 +38,10 @@ specific dictionaries, the program stayed private for years.
 Coming back to the project recently, I wanted to make it general enough to be
 useful to other people, and capable of using any number of dictionaries. After
 kicking around a few designs, I went with a very simple database with just two
-tables and a handful of fields.
-
-The old codebase has been replaced with a cleaner and smaller one. The new
-program has the flexibility to work with any number of dictionaries. Since the
-implementation has been generalized, I think it may now be useful to others who
-want such a dictionary program, and prefer the power and flexibility of Unix
-tools.
+tables and a handful of fields. The new program has the flexibility to work
+with any number of dictionaries. Since it has been generalized, it may be
+useful to others who want such a dictionary program, and prefer the power and
+flexibility of Unix tools.
 
 Dictionaries
 ------------
@@ -132,6 +129,5 @@ invoking cjk-defn::
 Documentation
 -------------
 
-This document includes basic information about the program. In the future, a
-manual page should be included with the program, cjk-defn(1), which will be
-readable like any other man page.
+A normal manual page is included with the software, cjk-defn(1), which covers
+basic usage information.
