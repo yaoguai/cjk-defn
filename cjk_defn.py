@@ -163,9 +163,9 @@ def query_definitions(database, dict_name, term):
     sql = '''
         SELECT DF_ALT, DF_DEFN
         FROM DEFINITIONS
-        WHERE DF_DICT=? AND DF_FORM1=? OR DF_FORM2=?
+        WHERE DF_DICT=? AND DF_FORM1=? OR DF_DICT=? AND DF_FORM2=?
         '''
-    curs.execute(sql, (dict_name, term, term,))
+    curs.execute(sql, (dict_name, term, dict_name, term,))
     for alt_form, definition in curs:
         definitions.append([term, alt_form, definition])
     curs.close()
